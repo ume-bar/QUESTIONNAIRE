@@ -7,10 +7,10 @@ interface Props {
 }
 
 const TextareaComp: FC<Props> = props  => {
-  const { value } = props;
+  const { value, onChange, name } = props;
   return (
     <>
-      <textarea value={value} ></textarea>
+    <textarea name={name} value={value} onChange={e => onChange(e)} />
     </>
   );
 };
