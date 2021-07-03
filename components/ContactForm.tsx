@@ -14,6 +14,7 @@ const ContactForm: FC = () => {
     first_name_kana: '',
     email: '',
   });
+  
 
   const clearAllInputValue = () => {
     setState({
